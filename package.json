@@ -4,7 +4,8 @@
   "description": "mocha-enzyme test tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -w test/helpers/browser.js test/*.spec.js",
+    "test": "mocha -w test/helpers/browser.js test/**/*.spec.js",
+    "test:watch": "mocha --watch --require test/helpers/browser.js test/**/*.spec.js",
     "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./"
   },
   "ava": {
